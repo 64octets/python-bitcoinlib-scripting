@@ -1,6 +1,7 @@
 ### Open Provenance February 2016 - https://myveryown.org
 ### Bitcoin Blockchain Information using python-bitcoinlib
 ### CTxIn & COutPoint Objects and Properties
+### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
 ## Import the modules required and setup a connection to bitcoin
 import bitcoin

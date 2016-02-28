@@ -1,6 +1,6 @@
 ### Python-bitcoinlib Scripting Examples
 
-In this repo you will find some basic scripts that utilise Peter Todds python-bitcoinlib.
+In this repo you will find some basic scripts that utilise Peter Todd's python-bitcoinlib.
 
 We have found basic examples hard to find online, so we thought we would make a few to help others to learn
 

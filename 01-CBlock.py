@@ -3,7 +3,7 @@
 ### CBlock Object and Properties
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
-## Import the modules required and setup a connection to bitcoin
+## Import the modules required
 import bitcoin
 import bitcoin.rpc
 

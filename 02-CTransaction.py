@@ -3,11 +3,11 @@
 ### CTransaction Object and Properties
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
-## Import the modules required and setup a connection to bitcoin
+## Import the modules required
 import bitcoin
+import bitcoin.rpc
 
 ## Create a proxy object and connect to the bitcoin.rpc 
-import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Get the latest CBlock data from bitcoin rpc proxy
@@ -38,5 +38,8 @@ if len(vtx) > 0 :
 	print "TxHash: "
 	print bitcoin.core.b2lx(thetx.GetHash())
 print "----------------------------------------------------------------"
-print " "  
+print "Dump of RAW CTransaction Object:"
+print thetx
+print "----------------------------------------------------------------"
+print ' ' 
 exit()

@@ -1,5 +1,5 @@
 ### Open Provenance February 2016 - https://myveryown.org
-### Sending bitcoins using python-bitcoinlib
+### Simple sending of bitcoins using python-bitcoinlib
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
 ## This script is intentionally simple so as to work on both test and main nets without modification.

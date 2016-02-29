@@ -21,7 +21,7 @@ print "----------------------------------------------------------------"
 print "Bitcoin CTxIn Object Information: Block Height ", myproxy.getblockcount()
 print "----------------------------------------------------------------"
 
-## We need a non coinbase transaction for this demo as coinbase transactions are no inputs.
+## We need a non coinbase transaction for this demo as coinbase transactions have no inputs.
 ## in this example we will show the second transaction or first non "coinbase" transaction details.
 
 if len(vtx) > 2 :
@@ -49,7 +49,7 @@ if len(vtx) > 2 :
 			## From this Object we can get info
 			print "is_final: ", vi.is_final()
 			print "nSequence : ", vi.nSequence
-			## the CTxIn Object also contains one or many COutPoint Objects
+			## the CTxIn Object also contains a COutPoint Object
 			vip = vi.prevout
 			print "COutPoint Hash: "
 			print bitcoin.core.b2lx(vip.hash)

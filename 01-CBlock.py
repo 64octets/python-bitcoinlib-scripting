@@ -5,10 +5,9 @@
 
 ## Import the modules required and setup a connection to bitcoin
 import bitcoin
-#bitcoin.SelectParams("testnet")
+import bitcoin.rpc
 
 ## Create a proxy object and connect to the bitcoin.rpc 
-import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Get the latest CBlock data from bitcoin rpc proxy
@@ -34,6 +33,9 @@ print " "
 print "Merkel Root: "
 print bitcoin.core.b2lx(block_info.hashMerkleRoot)
 print ' ' 
+print "----------------------------------------------------------------"
+print "Dump of RAW CBlock Object:"
+print block_info
 print "----------------------------------------------------------------"
 print ' ' 
 exit()

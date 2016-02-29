@@ -2,11 +2,13 @@
 ### Sending bitcoins using python-bitcoinlib
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
-## Import the modules required and setup a connection to bitcoin
+## This script is intentionally simple so as to work on test an mainnet without modification.
+
+## Import the modules required
 import bitcoin
+import bitcoin.rpc
 
 ## Create a proxy object and connect to the bitcoin.rpc 
-import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Obtain the walltet balance

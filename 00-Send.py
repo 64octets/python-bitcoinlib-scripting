@@ -2,7 +2,8 @@
 ### Simple sending of bitcoins using python-bitcoinlib
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
-## This script is intentionally simple so as to work on both test and main nets without modification.
+## This script is intentionally simple so as to work on both 
+## testnet and mainnet without modification.
 
 ## Import the modules required
 import bitcoin

@@ -10,7 +10,7 @@ Second we show you how to access the following objects:
 
 *CBlock, CTransaction, CTxIn, COutPoint and CTxOut*
 
-Assuming you have complied and installed bitcoin, use the following commands to download and install the latest python-bitcoinlib from Peter Todds repository on Github
+Assuming you have complied and installed bitcoin, use the following commands to download and install the latest python-bitcoinlib from Peter Todd's repository on Github
 
 ```
 git clone https://github.com/petertodd/python-bitcoinlib
@@ -42,3 +42,7 @@ Open Provenance is open source!
 If you would like to donate to the Open Provenance Project our official donation address is: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
 If you would like to give support with your abilities please get in touch via Twitter @OpenProvenance.
+
+#### Notes
+
+These instrctions are for Raspberry Pi based #Fullnodes and will not work on Windows

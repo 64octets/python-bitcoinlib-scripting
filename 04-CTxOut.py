@@ -56,6 +56,9 @@ if len(vtx) > 2 :
 			print bitcoin.core.b2x(vo.scriptPubKey)
 			print '--------'
 			vov = vov + vo.nValue
+			print "Dump of RAW CTxOut Object:"
+			print vo
+			print '----------'
 		print " " 
 		print "Total Output Value: ", vov
 else :

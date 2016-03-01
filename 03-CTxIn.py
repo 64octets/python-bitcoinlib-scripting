@@ -59,6 +59,12 @@ if len(vtx) > 2 :
 			print "scriptSig : "
 			print bitcoin.core.b2lx(vi.scriptSig)
 			print '----------'
+			print "Dump of RAW CTxIn Object:"
+			print vi
+			print " "
+			print "Dump of RAW COutPoint Object:"
+			print vip
+			print '----------'
 else :
 	print "Sorry this block only has a coinbase transaction."
 print "----------------------------------------------------------------"

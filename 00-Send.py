@@ -41,5 +41,5 @@ else :
 			myproxy.sendtoaddress(address, satoshis)
         		print "Coins have been sent, have a nice day!"
 	else :
-		print"Sorry that did not appear to be a bitcoin address, have a nice day!"
+		print "Sorry that did not appear to be a bitcoin address, have a nice day!"
 exit()

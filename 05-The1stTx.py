@@ -28,13 +28,13 @@ for blockno in range (starting_block, ending_block) :
 	if tx_count >=2 : # then we have more than just a coinbase transaction in the current block
 	
 		print "Found it ..."
-		print "Block Number:", blockno, " Difficulty:", block_info.difficulty
-		print "Nonce: ", block_info.nNonce, " Time: ", block_info.nTime
+		print " "
+		print "Block Number:", blockno, "	Difficulty:", block_info.difficulty
+		print "Nonce: ", block_info.nNonce, "	Time: ", block_info.nTime
 		print "Block Hash: "
 		print bitcoin.core.b2lx(block_info.GetHash())
 		print " "
 		print "Transaction Details:"
-		print " "
   		for x in range (1, 2) :  
 			thetx = vtx[x] #grab the CTransaction object 
 			vin = thetx.vin #grab the CTxIn object
@@ -63,8 +63,8 @@ for blockno in range (starting_block, ending_block) :
 					print bitcoin.core.b2x(vo.scriptPubKey)
 					vov = vov + vo.nValue
 					print " " 
-				print "Total Input Value: ", bitcoin.core.str_money_value(5000000000)
-				print "Total Output Value: ", bitcoin.core.str_money_value(vov)
-				print "Transaction Fees: ", bitcoin.core.str_money_value(5000000000-vov)	
+				print bitcoin.core.str_money_value(5000000000), "	Total Input Value"
+				print bitcoin.core.str_money_value(vov), "	Total Output Value"
+				print bitcoin.core.str_money_value(5000000000-vov), "	Transaction Fees"	
 				## OK we have finished
 				exit()

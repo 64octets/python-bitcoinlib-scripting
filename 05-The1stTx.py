@@ -7,8 +7,7 @@
 
 ## Hint 
 ## Block Number: 170
-## TX Hash 
-## f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16
+## TX f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16
 
 
 ## Import the modules required and setup a connection to bitcoin

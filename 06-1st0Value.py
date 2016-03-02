@@ -8,8 +8,7 @@
 
 ## Hint 
 ## Block Number: 82627
-## TX Hash 
-## 2f2442f68e38b980a6c4cec21e71851b0d8a5847d85208331a27321a9967bbd6
+## TX 2f2442f68e38b980a6c4cec21e71851b0d8a5847d85208331a27321a9967bbd6
 
 
 ## Import the modules required and setup a connection to bitcoin
@@ -23,11 +22,11 @@ myproxy = bitcoin.rpc.Proxy()
 starting_block = 0
 ending_block = myproxy.getblockcount()
 
-print "Searching for the 1st Transaction ..."
+print "Searching for the 1st Zero Value Transaction ..."
 
 ## Now search block by block until we find what we are looking for
 for blockno in range (starting_block, ending_block) :
-	print blockno	
+	# print blockno	
 	block_info = myproxy.getblock(myproxy.getblockhash(blockno))
 	vtx = block_info.vtx
 	tx_count = len(block_info.vtx)
@@ -41,7 +40,7 @@ for blockno in range (starting_block, ending_block) :
 					if vo.is_valid() :
 						if vo.nValue == 0 :
 							print "Block Number:", blockno
-							print "TX Hash "
+							print "TX "
 							print bitcoin.core.b2lx(thetx.GetHash())
 							## OK we have finished
 							exit()

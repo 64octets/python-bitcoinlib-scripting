@@ -18,7 +18,7 @@ import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Declare some variables used by our search
-starting_block = 82626
+starting_block = 0
 ending_block = myproxy.getblockcount()
 
 print "Searching for the 1st Zero Value Transaction Output..."

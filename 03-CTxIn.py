@@ -34,8 +34,7 @@ if len(vtx) > 2 :
 	print "Is Coinbase: ", thetx.is_coinbase()
 	print "nVersion: ", thetx.nVersion
 	print "nLockTime: ", thetx.nLockTime
-	print "TxHash: "
-	print bitcoin.core.b2lx(thetx.GetHash())
+	print "TX: ", bitcoin.core.b2lx(thetx.GetHash())
 
 	## From the CTransaction Object we get the CTxIn Objects
 	vin = thetx.vin

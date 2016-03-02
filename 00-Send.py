@@ -14,7 +14,7 @@ myproxy = bitcoin.rpc.Proxy()
 bal = myproxy.getbalance()
 
 ## Display this to the user
-print "Your balance is :", bal, " satoshis"
+print "Your balance is: ", bal, "satoshis"
 
 ## Request address to send coins to from the user
 address = raw_input("Please enter the address to send to: ")
@@ -22,7 +22,7 @@ if len(address) == 0 :
     print "No address supplied, have a nice day!"
 else :
 	check_address = myproxy.validateaddress(address)
-	## this returns a JSON object containing a TRUE/FALSE value so we check that 
+	## returns a JSON object containing a TRUE/FALSE value so we check that 
 	if check_address["isvalid"] :
 		## Request amount to send from the user
 		satoshis = raw_input("Please enter the number of satoshis to send: ")

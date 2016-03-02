@@ -35,8 +35,7 @@ if len(vtx) > 0 :
 	print "Is Coinbase: ", thetx.is_coinbase()
 	print "nVersion: ", thetx.nVersion
 	print "nLockTime: ", thetx.nLockTime
-	print "TxHash: "
-	print bitcoin.core.b2lx(thetx.GetHash())
+	print "TX: ", bitcoin.core.b2lx(thetx.GetHash())
 print "----------------------------------------------------------------"
 print "Dump of RAW CTransaction Object:"
 print thetx

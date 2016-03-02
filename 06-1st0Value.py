@@ -8,8 +8,7 @@
 
 ## Hint 
 ## Block Number: 82627
-## TX 2f2442f68e38b980a6c4cec21e71851b0d8a5847d85208331a27321a9967bbd6
-
+## TX: 2f2442f68e38b980a6c4cec21e71851b0d8a5847d85208331a27321a9967bbd6
 
 ## Import the modules required and setup a connection to bitcoin
 import bitcoin
@@ -19,10 +18,10 @@ import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Declare some variables used by our search
-starting_block = 0
+starting_block = 82626
 ending_block = myproxy.getblockcount()
 
-print "Searching for the 1st Zero Value Transaction ..."
+print "Searching for the 1st Zero Value Transaction Output..."
 
 ## Now search block by block until we find what we are looking for
 for blockno in range (starting_block, ending_block) :
@@ -40,7 +39,6 @@ for blockno in range (starting_block, ending_block) :
 					if vo.is_valid() :
 						if vo.nValue == 0 :
 							print "Block Number:", blockno
-							print "TX "
-							print bitcoin.core.b2lx(thetx.GetHash())
+							print "TX :", bitcoin.core.b2lx(thetx.GetHash())
 							## OK we have finished
 							exit()

@@ -25,7 +25,7 @@ print "Searching for the 1st Zero Value Transaction Output..."
 
 ## Now search block by block until we find what we are looking for
 for blockno in range (starting_block, ending_block) :
-	# print blockno	
+	print blockno	
 	block_info = myproxy.getblock(myproxy.getblockhash(blockno))
 	vtx = block_info.vtx
 	tx_count = len(block_info.vtx)

@@ -5,16 +5,18 @@ In this repo you will find some basic scripts that utilise Peter Todd's python-b
 We have found basic examples hard to find online, so we thought we would make a few to help others to learn
 
 ##### Lesson 1 
+
 We show how to query the wallet to obtain its balance then how to send coins in 00-send.py
 
 ##### Lesson 2
+
 We show you how to access the following objects:
 
 *CBlock, CTransaction, CTxIn, COutPoint and CTxOut*
 
 ##### Extras
 
-We show you how to search the blockchain 
+We show you how to search the blockchain and more!
 
 #### Setup
 
@@ -24,12 +26,12 @@ Assuming you have complied and installed bitcoin, use the following commands to 
 git clone https://github.com/petertodd/python-bitcoinlib
 ```
 
-Then run the following commands as root to install
+Then run the following commands to install
 
 ```
 cd python-bitcoinlib
-python setup.py build
-python setup.py install
+sudo python setup.py build
+sudo python setup.py install
 ```
 
 To run the scripts in this repo please use the following syntax:

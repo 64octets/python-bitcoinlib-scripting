@@ -1,6 +1,6 @@
 ### Open Provenance February 2016 - https://myveryown.org
 ### Bitcoin Blockchain Information using python-bitcoinlib
-### Coinbase Messages 
+### The most recent 50 Coinbase Messages 
 ### Donate to Open Provenance: 1opDUZQ9nsL1LJALBdV1dvqSMtcvNj9EC
 
 ## Import the modules required and setup a connection to bitcoin
@@ -11,10 +11,9 @@ import bitcoin.rpc
 myproxy = bitcoin.rpc.Proxy()
 
 ## Declare some variables used by our search
-starting_block = 0
 ending_block = myproxy.getblockcount()
+starting_block = ending_block - 50
 #block = 0 Satoshi Message
-#block = 368867 Personal Message
 
 ## Now search block by block until we find what we are looking for
 for blockno in range (starting_block, ending_block) :
@@ -31,6 +30,4 @@ for blockno in range (starting_block, ending_block) :
 	## Grab the scriptSig  
 	vip = vi.scriptSig
 	
-	print blockno
-	print vip
-
+	print blockno, vip

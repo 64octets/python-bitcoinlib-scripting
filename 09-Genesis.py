@@ -16,7 +16,7 @@ block_info = myproxy.getblock(myproxy.getblockhash(0))
 ## Grab the transactions from the block
 vtx = block_info.vtx
 
-#'# Grab the CTransaction object from the block 
+#'# Grab the Coinbase CTransaction object from the block 
 thetx = vtx[0] 
 
 ## From the CTransaction Object we get the CTxIn Objects
@@ -29,4 +29,3 @@ vi = vin[0]
 vip = vi.scriptSig
 
 print vip
-
